@@ -102,6 +102,7 @@ class chromium_xdg_mime_conan_project(conan_build_helper.CMakePackage):
     def build_requirements(self):
         self.build_requires("cmake_platform_detection/master@conan/stable")
         self.build_requires("cmake_build_options/master@conan/stable")
+        self.build_requires("cmake_helper_utils/master@conan/stable")
 
         if self._is_tests_enabled():
             self.build_requires("catch2/[>=2.1.0]@bincrafters/stable")
